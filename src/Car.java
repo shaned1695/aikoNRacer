@@ -1,5 +1,6 @@
 import processing.core.PVector;
 
+// Class for the car
 public class Car extends GameObject {
     public void draw() {
         Game.getInstance().image(Resources.getCar(), position.x, position.y);
