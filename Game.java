@@ -5,14 +5,14 @@ import java.util.stream.Collectors;
 public class Game extends PApplet{
     List<GameObject> gameObjects = new ArrayList<>();
     static Game instance;
-    Car car;
+    Car player;
     int score = 0;
     boolean reset = false;
 
     public void setup() {
         addGameObject(new RoadManager(10));
-        car = new Car();
-        addGameObject(car);
+        player = new Car();
+        addGameObject(player);
         addGameObject(new ObstacleManager(10));
 
         textSize(32);
@@ -26,8 +26,8 @@ public class Game extends PApplet{
     public void draw(){
         if (reset) {
             addGameObject(new RoadManager(10));
-            car = new Car();
-            addGameObject(car);
+            player = new Car();
+            addGameObject(player);
             addGameObject(new ObstacleManager(10));
 
             reset = false;
@@ -60,8 +60,8 @@ public class Game extends PApplet{
         g.start();
     }
 
-    public Car getCar() {
-        return car;
+    public Car getPlayer() {
+        return player;
     }
 
     public void reset() {
