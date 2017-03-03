@@ -1,7 +1,9 @@
 # aikoNRacer
 Car racing game made for Gamesfleadh 2017
 
-Team names:
+Team name: SSLAY
+
+Team members:
   - Shane Dunleavy
   - Yasmina Nunez
   - Thuy Nguyen
