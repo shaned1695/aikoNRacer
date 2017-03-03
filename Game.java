@@ -15,7 +15,7 @@ public class Game extends PApplet{
         addGameObject(player);
         addGameObject(new ObstacleManager(10));
 
-        textSize(32);
+        textSize(30);
     }
 
     public void settings(){
@@ -33,13 +33,13 @@ public class Game extends PApplet{
             reset = false;
         }
 
-        background(255);
+        background(200);
         ellipse(mouseX, mouseY, 20, 20);
 
         gameObjects = gameObjects.stream().filter(g -> !g.delete).collect(Collectors.toList());
         gameObjects.forEach(g -> g.draw());
 
-
+        fill(255, 0, 0);
         text("Score: " + Integer.toString(score), 10, 30);
 
         if (Game.getInstance().frameCount % 5 == 0) {
