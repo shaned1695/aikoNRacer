@@ -1,6 +1,7 @@
 import processing.core.PVector;
 import java.util.concurrent.ThreadLocalRandom;
 
+//class for obstacles
 public class Obstacle extends GameObject{
     float speed;
 
