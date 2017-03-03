@@ -1,2 +1,2 @@
 # aikoNRacer
-Game for games fleadh
+Car racing game made for Gamesfleadh 2017
