@@ -6,3 +6,4 @@ Team names:
   - Yasmina Nunez
   - Thuy Nguyen
   - Angela Peng
+  - Sylvia Wan
