@@ -5,6 +5,7 @@ public class Car extends GameObject {
     public void draw() {
         Game.getInstance().image(Resources.getCar(), position.x, position.y);
 
+        // Controls for the movement of the car
         if (Game.getInstance().keyPressed) {
             if (Game.getInstance().key == 'a') {
                 position.x -= 5;
