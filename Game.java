@@ -33,13 +33,13 @@ public class Game extends PApplet{
             reset = false;
         }
 
-        background(200);
+        background(255);
         ellipse(mouseX, mouseY, 20, 20);
 
         gameObjects = gameObjects.stream().filter(g -> !g.delete).collect(Collectors.toList());
         gameObjects.forEach(g -> g.draw());
 
-        fill(255, 0, 0);
+        fill(200, 0, 0);
         text("Score: " + Integer.toString(score), 10, 30);
 
         if (Game.getInstance().frameCount % 5 == 0) {
