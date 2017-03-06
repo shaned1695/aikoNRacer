@@ -12,4 +12,4 @@ Team members:
 
 Trailer for the game: https://youtu.be/-3AeVRWzlx4
 
-Contorls: A and D to move
+Controls: A and D to move
