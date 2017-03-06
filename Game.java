@@ -2,7 +2,7 @@ import processing.core.PApplet;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Game extends PApplet{
+public class Game extends PApplet {
     List<GameObject> gameObjects = new ArrayList<>();
     static Game instance;
     Car player;
@@ -39,6 +39,7 @@ public class Game extends PApplet{
         gameObjects = gameObjects.stream().filter(g -> !g.delete).collect(Collectors.toList());
         gameObjects.forEach(g -> g.draw());
 
+        //Displays the score
         fill(200, 0, 0);
         text("Score: " + Integer.toString(score), 10, 30);
 
@@ -63,7 +64,8 @@ public class Game extends PApplet{
     public Car getPlayer() {
         return player;
     }
-
+    
+    // Resets the score back to zero
     public void reset() {
         gameObjects.forEach(g -> g.delete());
         reset = true;
